@@ -7,5 +7,10 @@ setup(
     author='Matt Deyo',
     author_email='',
     url='https://github.com/alemassaad/d-star-lite',
-    packages=find_packages()
+    packages=find_packages(),
+    entry_points={
+        'console_scripts' : [
+            'd-star-cli=d-star-lite.main:main'
+        ]
+    }
 )
